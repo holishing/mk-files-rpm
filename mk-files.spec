@@ -1,6 +1,6 @@
 Summary: Support files for bmake, the NetBSD make(1) tool
 Name: mk-files
-Version: 20110808
+Version: 20111111
 Release: 1%{?dist}
 License: BSD
 Group: Development/Tools
@@ -38,6 +38,9 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/mk/*
 
 %changelog
+* Wed Dec 21 2011 Luis Bazan <bazanluis20@gmail.com> - 20111111-1
+- New upstream version 20111111
+
 * Thu Sep 29 2011 Luis Bazan <bazanluis20@gmail.com> - 20110808-1
 - new upstream version
 
