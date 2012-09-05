@@ -1,11 +1,11 @@
-Summary: Support files for bmake, the NetBSD make(1) tool
-Name: mk-files
-Version: 20120420
-Release: 2%{?dist}
-License: BSD
-Group: Development/Tools
-URL: ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/
-Source0: ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/mk-%{version}.tar.gz
+Summary:   Support files for bmake, the NetBSD make(1) tool
+Name:      mk-files
+Version:   20120808
+Release:   1%{?dist}
+License:   BSD
+Group:     Development/Tools
+URL:       ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/
+Source0:   ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/mk-%{version}.tar.gz
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -38,6 +38,9 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/mk/*
 
 %changelog
+* Wed Sep 05 2012 Luis Bazan <lbazan@fedoraproject.org> - 20120808-1
+- New Upstream Version
+
 * Fri Jul 20 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 20120420-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
 
