@@ -1,7 +1,7 @@
 Summary:   Support files for bmake, the NetBSD make(1) tool
 Name:      mk-files
 Version:   20140314
-Release:   2%{?dist}
+Release:   3%{?dist}
 License:   BSD
 Group:     Development/Tools
 URL:       ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/
@@ -38,6 +38,9 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/mk/*
 
 %changelog
+* Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 20140314-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
+
 * Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 20140314-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
 
