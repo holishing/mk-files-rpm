@@ -28,7 +28,6 @@ env FORCE_BSD_MK={RPM_BUILD_ROOT}/nonexistent \
     sh install-mk -v -m 644 ${RPM_BUILD_ROOT}%{_datadir}/mk
 
 %files
-%defattr(-,root,root,-)
 %doc ChangeLog README
 %dir %{_datadir}/mk
 %{_datadir}/mk/*
