@@ -3,7 +3,6 @@ Name:      mk-files
 Version:   20180528
 Release:   1%{?dist}
 License:   BSD
-Group:     Development/Tools
 URL:       ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/
 Source0:   ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/mk-%{version}.tar.gz
 BuildArch: noarch
