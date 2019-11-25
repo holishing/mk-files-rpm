@@ -1,11 +1,12 @@
 Summary:   Support files for bmake, the NetBSD make(1) tool
 Name:      mk-files
 Version:   20180528
-Release:   3%{?dist}
+Release:   4%{?dist}
 License:   BSD
 URL:       ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/
 Source0:   ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/mk-%{version}.tar.gz
 BuildArch: noarch
+BuildRequires: python3-devel
 
 %description
 The mk-files package provides some bmake macros derived from the NetBSD
@@ -16,6 +17,7 @@ shared libraries.
 %prep
 %setup -q -n mk
 sed -i.timestamp -e 's|cp_f=-f|cp_f=-pf|' install-mk
+pathfix.py -pni "%{__python3} %{py3_shbang_opts}" . meta2deps.py
 
 %build
 
@@ -32,6 +34,9 @@ env FORCE_BSD_MK={RPM_BUILD_ROOT}/nonexistent \
 %{_datadir}/mk/*
 
 %changelog
+* Mon Nov 25 2019 holishing <holishingtest@gmail.com> - 20180528-4
+- fix python shebang
+
 * Tue Feb 12 2019 Luis Bazan <lbazan@fedoraproject.org> - 20180528-3
 - rebuild
 
